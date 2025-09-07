@@ -9,7 +9,7 @@ body {
 main {
     display: flex;
     height: 100vh;
-    padding: 0 40px 0 80px;
+    padding: 0 40px 0 40px;
     overflow: hidden;
     background-color: #3b3b3b;
     align-items: center;
