@@ -11,7 +11,7 @@
 </head>
 <body>
     <main class="container">
-        <div class="containerColumn1" style="background-color: white; border-radius: 40px; height: 90%";>
+        <div id="containerColumn1" style="background-color: white; border-radius: 40px; height: 90%";>
             <div id="infoBox">
                 <h1>Etch-A-Sketch</h1>
                 <h2>Made by Daria Pora</h2>
@@ -30,20 +30,22 @@
             </div>
             <div class="settings" style="padding: 20px;">
                 <div class="brushSettings">
-                    <button id="brush">Brush</button>
+                    <button id="brushBtn">Brush</button>
                     <button id="eraserBtn">Eraser</button>
                 </div>
                 <div class="sliders">
-                <input type="range" id="gridSize" min="4" max="64" step="1">
-                <label for="gridSize">Grid Size</label>
-                <input type="range" id="opacitySld" min="0" max="1" step="0.1">
-                <label for="opacitySld">Opacity</label>
+                <input type="range" id="gridSld" min="16" max="64" step="1" value="16">
+                <label for="gridSld">Grid Size</label>
+                <!-- <input type="range" id="opacitySld" min="0" max="1" step="0.1" value="1">
+                <label for="opacitySld">Opacity</label> -->
                 <button id="resetGrid">Reset Grid</button>
                 </div>
             </div>
         </div>
-        <div class="containerColumn2" style="border: 1px solid rgb(255, 235, 235)">
+        <div id="containerColumn2" style="border: 5px solid rgb(255, 255, 255); border-radius: 40px; padding: 20px; background-color: rgba(255, 255, 255, 0.2) ">
+            <p id="helpText">Use the Grid Size slider to geneate a grid.</p>  
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
