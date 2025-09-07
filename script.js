@@ -5,6 +5,7 @@ const colors = Array.from(document.getElementsByClassName("color"));
 const eraserBtn = document.getElementById("eraserBtn");
 const brushBtn = document.getElementById("brushBtn");
 const resetBtn = document.getElementById("resetGrid");
+const valueText = document.getElementById("value");
 let color = "black";
 let gridSize;
 
@@ -15,18 +16,23 @@ colors.forEach((clr) => {
 });
 
 let isEraser = false;
-brushBtn.style.backgroundColor="#aad0fc";
+brushBtn.style.backgroundColor="#3b3b3b";
+brushBtn.style.color="white";
 
 eraserBtn.addEventListener("click", () => {
     isEraser = true;
-    eraserBtn.style.backgroundColor="#aad0fc";
+    eraserBtn.style.color = "white";
+    brushBtn.style.color = "black";
+    eraserBtn.style.backgroundColor="#3b3b3b";
     brushBtn.style.backgroundColor="white";
 });
 
 brushBtn.addEventListener("click", () => {
     isEraser = false;
-    brushBtn.style.backgroundColor="#aad0fc";
+    brushBtn.style.backgroundColor="#3b3b3b";
     eraserBtn.style.backgroundColor="white";
+    brushBtn.style.color = "white";
+    eraserBtn.style.color="black";
 });
 
 gridSld.addEventListener("input", () => {
@@ -34,6 +40,7 @@ gridSld.addEventListener("input", () => {
     helpTxt.style.display = "none";
     console.log(gridSize);
     column2.innerHTML = "";
+    value.innerHTML = `${gridSize}`+"x"+`${gridSize}`;
     let pixelGrid = document.createElement("div");
     let pixels = [];
     pixelGrid.style.display = "flex";
@@ -48,7 +55,7 @@ gridSld.addEventListener("input", () => {
             let pixel = document.createElement("div");
             pixel.style.height = 600 / gridSize + "px";
             pixel.style.width = 600 / gridSize + "px";
-            pixel.style.border = "0.5px solid black";
+            pixel.style.border = "0.5px solid #3b3b3b";
             pixel.style.backgroundColor = "white";
             row.append(pixel);
             pixels.push(pixel);

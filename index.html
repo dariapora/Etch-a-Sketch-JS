@@ -18,15 +18,15 @@
                 <h3>The Odin Project</h3>
             </div>
             <div id="colorGrid">
-                <div class="color" id="red" style="background-color: darkred;"></div>
-                <div class="color" id="green" style="background-color: darkgreen;"></div>
-                <div class="color" id="blue" style="background-color: aqua;"></div>
-                <div class="color" id="yellow" style="background-color: yellow;"></div>
-                <div class="color" id="orange" style="background-color: orange;"></div>
-                <div class="color" id="purple" style="background-color: purple;"></div>
-                <div class="color" id="pink" style="background-color: pink;"></div>
-                <div class="color" id="brown" style="background-color: brown;"></div>
-                <div class="color" id="black" style="background-color: black;"></div>
+                <div class="color" id="red" style="background-color: #FA9189;"></div>
+                <div class="color" id="green" style="background-color: #B3F5BC;"></div>
+                <div class="color" id="blue" style="background-color: #D6F6FF;"></div>
+                <div class="color" id="yellow" style="background-color: #FFE699;"></div>
+                <div class="color" id="orange" style="background-color: #FCAE7C;"></div>
+                <div class="color" id="purple" style="background-color: #E2CBF7;"></div>
+                <div class="color" id="cyan" style="background-color:#A4D8D8;"></div>
+                <div class="color" id="brown" style="background-color: #DCBCAA;"></div>
+                <div class="color" id="gray" style="background-color: #B3B3A8;"></div>
             </div>
             <div class="settings" style="padding: 20px;">
                 <div class="brushSettings">
@@ -34,16 +34,17 @@
                     <button id="eraserBtn">Eraser</button>
                 </div>
                 <div class="sliders">
-                <input type="range" id="gridSld" min="16" max="64" step="1" value="16">
                 <label for="gridSld">Grid Size</label>
+                <input type="range" id="gridSld" min="16" max="64" step="1" value="16">
+                <p id="value">16x16</p>
                 <!-- <input type="range" id="opacitySld" min="0" max="1" step="0.1" value="1">
                 <label for="opacitySld">Opacity</label> -->
-                <button id="resetGrid">Reset Grid</button>
                 </div>
             </div>
+            <button id="resetGrid" style="background-color:#C23B22; color:white; border: 0; width: 300px; margin: 0";>Reset Grid</button>
         </div>
         <div id="containerColumn2" style="border: 5px solid rgb(255, 255, 255); border-radius: 40px; padding: 20px; background-color: rgba(255, 255, 255, 0.2) ">
-            <p id="helpText">Use the Grid Size slider to geneate a grid.</p>  
+            <p id="helpText">Use the Grid Size slider to geneate a grid.</p> 
         </div>
     </main>
     <script src="script.js"></script>
