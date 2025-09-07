@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Schoolbell&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <main class="container">
+        <div class="containerColumn1" style="background-color: white; border-radius: 40px; height: 90%";>
+            <div id="infoBox">
+                <h1>Etch-A-Sketch</h1>
+                <h2>Made by Daria Pora</h2>
+                <h3>The Odin Project</h3>
+            </div>
+            <div id="colorGrid">
+                <div class="color" id="red" style="background-color: darkred;"></div>
+                <div class="color" id="green" style="background-color: darkgreen;"></div>
+                <div class="color" id="blue" style="background-color: aqua;"></div>
+                <div class="color" id="yellow" style="background-color: yellow;"></div>
+                <div class="color" id="orange" style="background-color: orange;"></div>
+                <div class="color" id="purple" style="background-color: purple;"></div>
+                <div class="color" id="pink" style="background-color: pink;"></div>
+                <div class="color" id="brown" style="background-color: brown;"></div>
+                <div class="color" id="black" style="background-color: black;"></div>
+            </div>
+            <div class="settings" style="padding: 20px;">
+                <div class="brushSettings">
+                    <button id="brush">Brush</button>
+                    <button id="eraserBtn">Eraser</button>
+                </div>
+                <div class="sliders">
+                <input type="range" id="gridSize" min="4" max="64" step="1">
+                <label for="gridSize">Grid Size</label>
+                <input type="range" id="opacitySld" min="0" max="1" step="0.1">
+                <label for="opacitySld">Opacity</label>
+                <button id="resetGrid">Reset Grid</button>
+                </div>
+            </div>
+        </div>
+        <div class="containerColumn2" style="border: 1px solid rgb(255, 235, 235)">
+        </div>
+    </main>
+</body>
+</html>
